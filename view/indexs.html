@@ -1,0 +1,152 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Document</title>
+    
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row mt-2">
+        <div class="col-sm-3 col-md-3 col-lg-3 p-2 bg-dark">
+            <div style="border-bottom: 1px solid grey;" class="container-fuid">
+                <img src="./images/partner-1.png" class="brand-logo" alt="">
+                <h3>Banking</h3>
+            </div>
+
+            <br>
+            <div class="d-flex justify-content-between">
+                <p>income</p>
+                <p class="text-success">1000 $</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p>Debits</p>
+                <p class="text-danger">1000 $</p>
+            </div>
+            <div class="d-flex justify-content-around m-2">
+            <a href="transfer" class="btn btn-lg btn-primary">
+                <span><i class="fas fa-money-bill-alt"></i> Transfer</span>
+            </a>
+            <a href="transfer" class="btn btn-lg btn-danger">
+                <span><i class="fas fa-file-invoice-dollar"></i> Pay Bills</span>
+            </a>
+            </div>
+
+            <h6>Menu</h6>
+            
+       
+            <ul class="nav d-flex flex-column">
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">Dashboard</a></li>
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">My Account</a></li>
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">Transfer</a></li>
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">Deposit</a></li>
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">KYC Status</a></li>
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">loan/Credit Financing </a></li>
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">Account Setting</a></li>
+              <li class="li-main nav-item  w-100 rounded-5 mt-1"><a class="nav-link" href="">Support</a></li>
+        
+
+            </ul>
+        
+        </div>
+        <div class="col-sm-9 col-md-9 col-lg-9 p-2 bg-success">
+        <div>
+        <div class="greet">
+          <div >
+          <h3 class="text-start">Good Day, Eric Anochili  Nonso</h3>
+          <p class="text-start">Welcome to your banking dashboard. Here you can manage your account,
+             make transfers, check transactions, and more.</p>
+          </div>
+          <div>
+            <button class="btn btn-info m-2">Deposit</button>
+            <button class="btn btn-danger m-2">Transfer</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="card bg-primary text-white mt-2">
+              <div class="card-header">
+                <h5>Recent Transactions</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-6">
+                  <img class="img-logo" src="../images/partner-1.png" alt="">
+                  <h6 class="mt-3">last login</h6>
+                  <p>timestamp</p>
+                  </div>
+                  <div class="col-6">
+                    <h6 class="mt-3">Available Balance</h6>
+                    <p class="text-white">$1,000.00</p>
+                    <h6><strong>Eric Anochili Eric</strong></h6>
+                    <h6>Nigeria</h6>
+                    <p>IP: 100.054.394</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+
+         <!-- TradingView Forex Cross Rates Widget -->
+
+<!-- TradingView Ticker Widget -->
+            
+
+<!-- TradingView Advanced Chart Widget -->
+<div class="tradingview-widget-container mt-5">
+  
+  <div id="tradingview_advanced"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+    new TradingView.widget({
+      "width": "80%",
+      "height": 600,
+      "symbol": "FX:EURUSD",
+      "interval": "30",
+      "timezone": "Etc/UTC",
+      "theme": "dark",  // Change to "light" for light mode
+      "style": "1",
+      "locale": "en",
+      "toolbar_bg": "#f1f3f6",
+      "enable_publishing": false,
+      "withdateranges": true,
+      "hide_side_toolbar": false,
+      "allow_symbol_change": true,
+      "save_image": false,
+      "container_id": "tradingview_advanced"
+    });
+  </script>
+</div>
+<!-- TradingView Advanced Chart Widget END -->
+
+
+ <!-- TradingView Ticker Widget -->
+
+<!-- TradingView Ticker Widget END -->
+
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+<select name="currency" id="">
+    <option value="1">gbp</option>
+    <option value="2">ngn</option>
+    <option value="3">usd</option>
+</select>
+<h1>wtf</h1>
+
+<a href="./asss.pdf" target="_blank">download</a>
+</body>
+</html>

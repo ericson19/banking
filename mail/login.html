@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Alert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .email-header {
+      background-color: #198754;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .email-body {
+      padding: 30px;
+      color: #333;
+    }
+    .email-footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-size: 12px;
+      text-align: center;
+      color: #888;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #198754;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .details {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="email-container">
+    <div class="email-header">
+      <h2>Login Notification</h2>
+    </div>
+
+    <div class="email-body">
+      <p>Hi <strong>{{ name }}</strong>,</p>
+      <p>We detected a new login to your <strong>{{ sitename }}</strong> account.</p>
+
+      <div class="details">
+        <p><strong>Login Time:</strong> {{ date }}</p>
+        <p><strong>IP Address:</strong> {{ ipaddress }}</p>
+        <p><strong>Location:</strong> {{ city }}, {{ country }}</p>
+      </div>
+
+      <p>If this was you, no further action is needed.</p>
+      <p>If you didn’t log in, please secure your account immediately.</p>
+
+      <a href="{{ siteurl }}/security" class="btn">Secure My Account</a>
+    </div>
+
+    <div class="email-footer">
+      &copy; {{ year }} { {sitename }}. All rights reserved.<br>
+      {{ address }}
+    </div>
+  </div>
+
+</body>
+</html>
