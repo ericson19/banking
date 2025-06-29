@@ -163,7 +163,7 @@ if ($result->num_rows > 0) {
                         <div class="col-md-6 col-12">
                             <div class="card bg-primary text-white mt-2">
                                 <div class="card-header">
-                                    <h5>User Details</h5>
+                                    <h5>User's Details</h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
